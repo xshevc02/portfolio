@@ -1,6 +1,25 @@
-# Portfolio
+# Anna Shevchenko — Portfolio
 
-A responsive personal portfolio built with TypeScript and Vite.
+Personal portfolio of Anna Shevchenko, a UX designer and frontend developer working at the intersection of psychology, product design, and technology.
+
+**[View the live portfolio →](https://xshevc02.github.io/portfolio/)**
+
+## About the project
+
+The website presents my education, professional experience, skills, interests, and selected UX/UI projects. It is designed as a lightweight, responsive experience with dedicated long-form case-study pages.
+
+Featured projects include:
+
+- **Analyticity redesign** — UX research, interface design, usability testing, and frontend implementation for a data-heavy traffic-analysis application.
+- **Wake & Wine** — a UX/UI and full-stack case study for a neutral alcohol and caffeine habit tracker.
+
+## Built with
+
+- TypeScript
+- Vite
+- HTML and CSS
+- GitHub Actions
+- GitHub Pages
 
 ## Local development
 
@@ -9,20 +28,14 @@ npm install
 npm run dev
 ```
 
-Edit personal details, education, experience, skills, hobbies, and projects in
-`src/data/portfolio.ts`. Place personal photos in `public/images` and reference
-them from the data file, for example `./images/profile.jpg`.
-
-The site includes:
-
-- a long-form portfolio homepage;
-- a printable HTML CV at `/cv/`;
-- individual project case studies under `/projects/<project-name>/`.
-
-## Production build
+Create a production build with:
 
 ```bash
 npm run build
 ```
 
-The Vite base path is configured for deployment to `xshevc02.github.io/portfolio`.
+Portfolio content is managed centrally in `src/data/portfolio.ts`. Images are stored in `public/images`.
+
+## Deployment
+
+Every push to the `main` branch triggers the GitHub Actions workflow that builds the Vite application and deploys the generated `dist` directory to GitHub Pages.
