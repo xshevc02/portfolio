@@ -432,6 +432,9 @@
 }
 
 .about-profile__photo {
+  width: 100%;
+  max-width: 21rem;
+  justify-self: center;
   aspect-ratio: 4 / 5;
 }
 
@@ -1242,7 +1245,7 @@
   }
 
   .about-profile__photo {
-    max-width: 26rem;
+    max-width: 18rem;
   }
 
   .timeline-item {

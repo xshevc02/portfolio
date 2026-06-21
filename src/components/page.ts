@@ -47,10 +47,11 @@ export const renderPage = (data: PortfolioData): string => `
     <a class="brand" href="#top" aria-label="Back to top">${data.name}<span>.</span></a>
     <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-button><span></span><span></span></button>
     <nav class="site-nav" aria-label="Main navigation" data-navigation>
-      <a href="#about">About</a>
+      <a href="#education">About</a>
       <a href="#experience">Experience</a>
       <a href="#work">Projects</a>
       <a href="#beyond">Life</a>
+      <a href="#contact">Contact</a>
       <a class="nav-cv" href="${data.cvDocumentUrl}" target="_blank" rel="noreferrer">CV ${arrowIcon}</a>
     </nav>
   </header>
@@ -80,7 +81,7 @@ export const renderPage = (data: PortfolioData): string => `
         </div>
       </div>
 
-      <div class="subsection education">
+      <div class="subsection education" id="education">
         <h2 class="subsection-title">Education</h2>
         <div class="timeline">${data.education.map(timelineItem).join('')}</div>
       </div>

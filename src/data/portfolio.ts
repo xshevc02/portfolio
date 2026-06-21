@@ -79,6 +79,7 @@ export const portfolio: PortfolioData = {
   role: 'UX designer shaping complex products into clear experiences.',
   introduction: 'I design where behavior meets beauty — using psychology to understand people, and code to bring ideas to life in complex, data-heavy products.',
   heroImage: 'images/profile/anna-main.png',
+  profileImage: 'images/profile/bachelor-thesis-photo.png',
   about: [
     'I am a UX designer and frontend developer based in Brno, working at the intersection of research, product thinking, and technology.',
     'My background in both information technology and management helps me connect user needs with technical constraints and business objectives.',
@@ -155,6 +156,7 @@ export const portfolio: PortfolioData = {
     {
       title: 'Books & movement',
       description: 'Away from the screen, I enjoy reading in different languages and practising yoga — two very different ways of slowing down and resetting.',
+      image: 'images/hobbies/books-and-movement-collage.png',
       link: {
         label: 'See what I’m reading on Goodreads',
         url: 'https://www.goodreads.com/user/show/194046726',
